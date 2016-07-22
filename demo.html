@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Javascript 返回顶部</title>
+	<style type="text/css">
+/*		#btn {width:40px; height:40px; position:fixed; right:65px; bottom:10px; display:none; background:url(images/top_bg.png) no-repeat left top;}
+		#btn:hover {background:url(images/top_bg.png) no-repeat 0 -39px;}*/
+		.bg {width:1190px; margin:0 auto;}
+		.backtoTop1 {
+        height: 40px;
+        width: 50px;
+        position: absolute;
+        /*绝对定位*/
+        padding-top: 8px;
+        right: 10px;
+        z-index: 9999;
+        /*避免闪烁*/
+        -moz-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        /*避免闪烁*/
+        background: blue;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .backtoTop2 {
+        height: 40px;
+        width: 50px;
+        position: fixed; /*固定定位*/
+        padding-top: 8px;
+        right: 100px;
+        z-index: 9999;
+        background: red;
+        cursor: pointer;
+        text-align: center;
+    }
+	</style>
+</head>
+<body>
+	<!-- <a href="javascript:;" id="btn" title="回到顶部"></a> -->
+	 <!--contenter-->
+	<div class="bg">
+		<img src="images/tb_bg.jpg" alt="" />
+	</div>
+    <!--backtoTop1-->
+    <!--兼容所有现代浏览器同时包括 ie6/7/8/9 （ie6会有一点点抖动）-->
+    <div id="backToTop1" class="backtoTop1"></div>
+    <!--backtoTop2-->
+    <!--兼容所有现代浏览器同时包括 ie7以上 -->
+    <div id="backToTop2" class="backtoTop2"></div>
+	<script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
